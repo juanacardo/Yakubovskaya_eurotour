@@ -1,0 +1,160 @@
+.prices {
+  margin-bottom: 140px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 110px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.prices__flex-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prices__inner-wrapper {
+  width: 370px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.prices__tour-wrapper {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    @media (max-width: $mobile-width) {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.prices__info {
+  padding-left: 64px;
+  padding-top: 116px;
+  order: 1;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    order: 0;
+    padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.prices__title {
+  position: relative;
+  padding-bottom: 23px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 175px;
+    height: 3px;
+    background-color: $orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.prices__text {
+  line-height: 27px;
+  color: rgba($dark-gray, 0.7);
+  margin-top: 33px;
+  margin-bottom: 60px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    margin-top: 22px;
+  }
+}
+
+.prices__contacts {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  color: $darkest-gray;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 11px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+}
+
+.prices__tel {
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 32px;
+  color: $black;
+  padding-left: 46px;
+  padding-top: 2px;
+  display: inline-block;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    color: $orange;
+    text-decoration: underline;
+    font-size: 18px;
+    padding-left: 0;
+    padding-top: 0;
+  }
+
+  & svg {
+    position: absolute;
+    top: 2px;
+    left: -4px;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:hover {
+    color: $orange-accent;
+
+    & svg {
+      stroke: $orange-accent;
+    }
+  }
+
+  &:active {
+    color: rgba($orange-accent, 0.5);
+
+    & svg {
+      stroke: rgba($orange-accent, 0.5);
+    }
+  }
+}

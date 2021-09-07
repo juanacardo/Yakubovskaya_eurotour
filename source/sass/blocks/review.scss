@@ -1,0 +1,99 @@
+.review {
+  background-color: $white;
+  position: absolute;
+  width: 382px;
+  height: auto;
+  right: 0;
+  bottom: 51%;
+  transform: translateY(50%);
+  padding-top: 35px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+
+  @media (max-width: $tablet-width) {
+    bottom: 0;
+    transform: translateY(0);
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 268px;
+    bottom: -45px;
+    padding-top: 30px;
+    padding-bottom: 43px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.review__title {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -0.67px;
+  padding-bottom: 17px;
+  margin: 0;
+  position: relative;
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &::after {
+    content: "";
+    width: 68px;
+    height: 1px;
+    background-color: $orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (max-width: $mobile-width) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.review__text {
+  font-size: 14px;
+  color: rgba($dark-gray, 0.7);
+  letter-spacing: -0.41px;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 19px;
+  margin-bottom: 32px;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.review__author-wrapper {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.review__avatar {
+  margin-right: 16px;
+
+  @media (max-width: $mobile-width) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.review__author {
+  line-height: 20px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.47px
+}

@@ -1,0 +1,26 @@
+/* Global */
+
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/mixin.scss";
+
+/* Blocks */
+@import "blocks/visyally-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/page.scss";
+@import "blocks/page-header";
+@import "blocks/promo.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/places.scss";
+@import "blocks/places.scss";
+@import "blocks/countries-menu.scss";
+@import "blocks/countries.scss";
+@import "blocks/review.scss";
+@import "blocks/prices.scss";
+@import "blocks/tour.scss";
+@import "blocks/feedback.scss";
+@import "blocks/input.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/modal.scss";

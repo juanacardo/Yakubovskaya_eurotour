@@ -1,0 +1,43 @@
+.button {
+  color: $white;
+  text-decoration: none;
+  background-color: $orange;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+
+  @media (max-width: $tablet-width) {
+    width: 250px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
+
+  &:hover {
+    background-color: $orange-accent;
+  }
+
+  &:active {
+    background-color: rgba($orange-accent, 0.5);
+    color: rgba($white, 0.5);
+  }
+
+  &--submit {
+    border: none;
+    cursor: pointer;
+  }
+}

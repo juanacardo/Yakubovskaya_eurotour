@@ -1,0 +1,121 @@
+.countries {
+  position: relative;
+  margin-bottom: 234px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.countries__container {
+  @media (max-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.countries__inner-wrapper {
+  width: 370px;
+  margin-right: 100px;
+  padding-top: 14px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.countries__menu-wrapper {
+  @media (max-width: $tablet-width) {
+    padding-left: 21px;
+    width: 768px;
+    max-width: 1023px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 320px;
+    max-width: 767px;
+    padding-left: 16px;
+  }
+}
+
+.countries__item {
+  display: flex;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+
+  &:not(.countries__item--active) {
+    display: none;
+  }
+}
+
+.countries__title {
+  letter-spacing: -1.25px;
+  position: relative;
+  padding-bottom: 23px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 0;
+    letter-spacing: normal;
+  }
+
+  &::after {
+    content: "";
+    width: 175px;
+    height: 3px;
+    background-color: $orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.countries__text {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  color: rgba($dark-gray, 0.7);
+  letter-spacing: -0.47px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 21px;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.countries__img {
+  @media (max-width: $tablet-width) {
+    display: block;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 32px;
+  }
+}

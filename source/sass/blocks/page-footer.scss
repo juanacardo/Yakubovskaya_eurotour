@@ -1,0 +1,243 @@
+.page-footer__inner-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 74px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    margin-bottom: 54px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-rows: repeat(3, min-content);
+    margin-bottom: 0;
+  }
+}
+
+.page-footer__section {
+  border-right: 1px solid $icon-gray;
+
+  @media (max-width: $mobile-width) {
+    border-right: none;
+    border-bottom: 1px solid $icon-gray;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 26px;
+  }
+
+  &--selfish {
+    border-right: none;
+    padding-left: 60px;
+
+    @media (max-width: $tablet-width) {
+      text-align: center;
+      padding-top: 30px;
+      padding-left: 0;
+      width: 100%;
+    }
+
+    @media (max-width: $mobile-width) {
+      border-bottom: none;
+      padding-bottom: 26px;
+      padding-top: 28px;
+    }
+  }
+}
+
+.page-footer__inner-flex {
+  @media (max-width: $mobile-width) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.page-footer__title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  color: $darkest-gray;
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.page-footer__inner-box {
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba($darkest-gray, 0.5);
+  display: inline-block;
+  margin-right: 46px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 44px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:nth-child(1) {
+    @media (max-width: $mobile-width) {
+      padding-right: 9px;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (max-width: $mobile-width) {
+      padding-left: 9px;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (max-width: $mobile-width) {
+      padding-top: 22px;
+    }
+  }
+
+  & p {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.page-footer__box {
+  display: flex;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 23px;
+    border-bottom: 1px solid $icon-gray;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  & .page-footer__section {
+    width: 50%;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  & .page-footer__section:nth-child(1) {
+    flex-grow: 1;
+
+    @media (max-width: $mobile-width) {
+      flex-grow: initial;
+    }
+  }
+
+  & .page-footer__section:nth-child(2) {
+    padding-left: 61px;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 50px;
+      width: 331px;
+      border-right: none;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+}
+
+.page-footer__link {
+  font-size: 14px;
+  line-height: 17px;
+  color: $orange;
+  display: block;
+  padding-left: 42px;
+
+  &--email {
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+    position: relative;
+
+    @media (max-width: $mobile-width) {
+      width: 250px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 22px;
+      padding-top: 7px;
+    }
+
+    & svg {
+      position: absolute;
+      top: 4px;
+      left: 0;
+    }
+
+    &:hover svg {
+      fill: rgba($dark-gray, 0.5);
+    }
+
+    &:active svg {
+      fill: rgba($dark-gray, 0.3);
+    }
+  }
+
+  &--tel {
+    font-size: 16px;
+    line-height: 32px;
+    position: relative;
+
+    @media (max-width: $mobile-width) {
+      width: 209px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 40px;
+    }
+
+    & svg {
+      position: absolute;
+      top: -2px;
+      left: 0;
+    }
+
+    &:hover svg {
+      stroke: rgba($dark-gray, 0.5);
+    }
+
+    &:active svg {
+      stroke: rgba($dark-gray, 0.3);
+    }
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: $dark-gray;
+  }
+
+  &:active {
+    color: rgba($dark-gray, 0.3);
+  }
+}
+
+.page-footer__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba($darkest-gray, 0.5);
+  margin: 0;
+}
+
+.page-footer__desktop-br {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

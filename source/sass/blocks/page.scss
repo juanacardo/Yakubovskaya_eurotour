@@ -1,0 +1,83 @@
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-family: $montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  color: $dark-gray;
+  background-color: $white;
+}
+
+.page__wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page__container {
+  max-width: 1300px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 65px;
+  padding-right: 65px;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 21px;
+    padding-left: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.page__wide-container {
+  max-width: 1920px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (max-width: $tablet-width) {
+    padding-right: 76px;
+    padding-left: 76px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.page__background {
+  width: 100%;
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+  background: url("../img/map_background.png") no-repeat 50% 25%;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    background: none;
+  }
+}
+
+.page__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
